@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="CSS/MainCss.css" rel="stylesheet" type="text/css">
+    <link href="CSS/Gallery-Grid.css" rel="stylesheet" type="text/css">
+    <link href="CSS/Gallery.js" rel="stylesheet" type="text/css">
+    <link href="CSS/Gallery.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" language="javascript" src="CSS/Color-change.js"></script>
+</head>
+<body>
+    <div class="sport">
+
+        <div class="section-1">
+            <div class="main">
+                <div class="logo">
+                    <a href="Main.html"><li><b class="brand-logo" href="#"><img src="Images/Brand%20Logo/logo.jpg" alt="Logo"></b> </li></a>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">About
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="Reviev.html">Feedback</a>
+                            <a href="site%20map.html">SiteMap</a>
+                            <a href="student-details.html">Group Info</a>
+                        </div>
+                    </div>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="#news">Products</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Explore
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="Cricket.html">Cricket</a>
+                            <a href="Swimming.html">Swimming</a>
+                            <a href="#">Formula-1</a>
+                            <a href="Rugby.html">Rugby</a>
+                        </div>
+                    </div>
+                    <a href="QUIZ.html">Quiz</a>
+                    <a href="Main.html">Home</a>
+                </div>
+            </div>
+        </div>
+
+            <!--END OF THE NAVIGATION BAR-->
+
+            <!--ADD YOUR PART HERE-->
+        <div class="section-add-1">
+            <div class="bgcolor">
+                <form style="color:Black">Select the Background Color:
+                    <select id="backgroundClr" name="changeClr" size="1" onchange="clrChange(this);">
+
+                        <label for="White">White</label>
+                        <option value="#ffffff">White</option>
+
+                        <label for="Light Blue">Light Blue</label>
+                        <option value="#00ffff">Light Blue</option>
+
+                        <label for="Yellow">Yellow</label>
+                        <option value="#ffff00">Yellow</option>
+
+                        <label for="Peach-Orange">Peach-Orange</label>
+                        <option value="#ffcc99">Peach-Orange</option>
+
+                        <label for="Aquamarine">Aquamarine</label>
+                        <option value="#66ffcc">Aquamarine</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="rugby">
+                <div class="absoluterugby1">
+                    <h2>Rugby</h2>
+                    <p>Rugby is a team sport that delivers significant social and health benefits</p>
+                </div>
+
+                <!-- rugby -->
+                <div class="absoluterugby">
+                    <img id="myImgrugby" src="CSS/Css%20Images/rugby.jpg" alt="Rugby is a team sport that delivers significant social and health benefits. It can also be a physically demanding sport and players should be physically and mentally prepared, and understand how to play safely. It is the responsibility of all - players, coaches and parents - to ensure that a positive, safe, enjoyable environment is created where ALL players will be able to reach their fullest potential, and that – whatever form of the game you play - the training and education materials and equipment are there to support everyone in creating that environment." style="width:100%;max-width:300px">
+                </div>
+
+                <!-- The Modal -->
+                <div id="myModalrugby" class="modalrugby">
+                    <span class="closerugby">&times;</span>
+                    <img class="modal-contentrugby" id="imgrugby">
+                    <div id="captionrugby"></div>
+                </div>
+            </div>
+            <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+
+            <div class="cricket">
+                <div class="absoluteCricket1">
+                    <h2>Cricket</h2>
+                    <p>Cricket is a sport which is played between two teams of eleven players each who score runs (points).</p>
+                </div>
+
+                <!-- Cricket -->
+                <div class="absoluteCricket">
+                    <img id="myImgCricket" src="CSS/Css%20Images/Cricket.jpg" alt="Cricket is a sport which is played between two teams of eleven players each who score runs (points). This is done by hitting the ball across the boundary, or by running between two sets of three small, wooden posts called wickets.the wickets are at each end of a rectangle of short grass called 'the pitch'. The pitch is inside a much larger oval of grass called the 'area of play'. The area of play is a 30 yard circle inside the cricket ground or stadium." style="width:100%;max-width:300px">
+                </div>
+
+                <!-- The Modal -->
+                <div id="myModalCricket" class="modalCricket">
+                    <span class="closeCricket">&times;</span>
+                    <img class="modal-contentCricket" id="imgCricket">
+                    <div id="captionCricket"></div>
+                </div>
+            </div>
+            <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+
+            <div class="absolutef1-1">
+                <h2>Formula One </h2>
+                <p>Formula One is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile and owned by the Formula One Group.</p>
+            </div>
+
+            <!-- f1 -->
+            <div class="absolutef1">
+                <img id="myImgf1" src="CSS/Css%20Images/f1.jpg" alt="Formula One (also known as Formula 1 or F1) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the Formula One Group. The World Drivers' Championship, which became the FIA Formula One World Championship in 1981, has been one of the premier forms of racing around the world since its inaugural season in 1950. The word formula in the name refers to the set of rules to which all participants' cars must conform. A Formula One season consists of a series of races, known as Grands Prix (French for ''grand prizes' or 'great prizes''), which take place worldwide on purpose-built circuits and on public roads." style="width:100%;max-width:300px">
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModalf1" class="modalf1">
+                <span class="closef1">&times;</span>
+                <img class="modal-contentf1" id="imgf1">
+                <div id="captionf1"></div>
+            </div>
+
+            <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+
+            <div class="absoluteswimming1">
+                <h2>Swimming</h2>
+                <p>Swimming is an individual or team racing sport that requires the use of one's entire body to move through water.</p>
+            </div>
+
+            <!-- Cricket -->
+            <div class="absoluteswimming">
+                <img id="myImgswimming" src="CSS/Css%20Images/swimming.jpg" alt="Swimming is an individual or team racing sport that requires the use of one's entire body to move through water. The sport takes place in pools or open water (e.g., in a sea or lake). Competitive swimming is one of the most popular Olympic sports,with varied distance events in butterfly, backstroke, breaststroke, freestyle, and individual medley. In addition to these individual events, four swimmers can take part in either a freestyle or medley relay. A medley relay consists of four swimmers who will each swim a different stroke, ordered as backstroke, breaststroke, butterfly and freestyle." style="width:100%;max-width:300px">
+            </div>
+
+            <!-- --swimming -->
+            <div id="myModalswimming" class="modalswimming">
+                <span class="closeswimming">&times;</span>
+                <img class="modal-contentswimming" id="imgswimming">
+                <div id="captionswimming"></div>
+            </div>
+
+            <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+
+            <script type="text/javascript" rel="script" src="CSS/Gallery.js">
+            </script>
+        </div>
+
+        <!--your part is over-->
+
+
+        <div class="section-2">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <p class="title">Dev@Sports Corner</p>
+                            <a href="student-details.html"><p><button class="button">Visit Developers</button></p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <!--footer only-->
+            <div class="footer">
+                <div class="inner-footer">
+                    <div class="footer-item">
+                        <h2>Site Links</h2>
+                        <div class="border"></div>
+                        <ul>
+                            <a href="Main.html">
+                                <li><img src="Images/footer/home-run.png"> Home</li>
+                            </a>
+                            <a href="QUIZ.html">
+                                <li><img src="Images/footer/question.png"> Quiz</li>
+                            </a>
+                            <a href="Main.html">
+                                <li><img src="Images/footer/explore.png"> Explore</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/buy.png"> Products</li>
+                            </a>
+                            <a href="Gallery.html">
+                                <li><img src="Images/footer/image.png"> Pictures</li>
+                            </a>
+                            <a href="site%20map.html">
+                                <li><img src="Images/footer/site.png"> Site Map</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h2>Contact Us</h2>
+                        <div class="border"></div>
+                        <ul>
+                            <a href="#">
+                                <li><img src="Images/footer/phone.png"> +94771234651</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/pin.png"> Location</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/mail.png"> e-mail</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h2>Follow Us On</h2>
+                        <div class="border"></div>
+                        <ul>
+                            <a href="#">
+                                <li><img src="Images/footer/facebook.png"> Facebook</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/twitter.png"> Twitter</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/instagram.png"> Instagram</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <h4>Page Editors</h4>
+                        <a class="editor" href="ruchiraPageEditor.html">Ruchira Chathuranga</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+

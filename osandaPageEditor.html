@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Osanda Page Editor</title>
+</head>
+<style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    table#t01 th {
+        background-color: black;
+        color: white;
+    }
+
+    .profile {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+        float: right;
+        margin: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+</style>
+<body>
+    <div>
+
+        <!--Heading Student Name-->
+        <div>
+            <a href="Main.html"><h6>back to Home</h6></a>
+            <h2>Student 1</h2>
+        </div>
+        
+        <!--Student Photo-->
+        <div>
+            <img class="profile" src="Images/Group/Student1.jpg" alt="Student 1 image">
+        </div>
+
+        <div>
+            <h3>Osanda Ginige</h3>
+        </div>
+
+        <div class="Details">
+            <hr>
+            <h4><b>Student Details</b></h4>
+            <table>
+                <tr>
+                    <td>Student IIT ID</td><td>2018181</td>
+                </tr>
+                <tr>
+                    <td>Student UoW ID</td><td>w1761754</td>
+                </tr>
+                <tr>
+                    <td>E-mail</td><td>osanda.2018181@iit.aclk</td>
+                </tr>
+                <tr>
+                    <td>Role</td><td>Student 1</td>
+                </tr>
+            </table>
+
+            <div class="Role">
+                <hr>
+                <h4>Student Role</h4>
+                <table id="t01">
+                    <tr>
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Presentation Page</td>
+                        <td>Starting page of the website redirected to main page</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Font size changer</td>
+                        <td>Font size of the page can be changed in steps</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Buy Products page</td>
+                        <td>Products can be selected and added to the cart</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Explore F1 page</td>
+                        <td>Description about formula 1</td>
+                        <td>Done</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

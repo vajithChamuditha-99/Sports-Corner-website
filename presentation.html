@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta charset="utf-8">
+        <title>Presentation page</title>
+        <style>
+            #group{
+                position: absolute;
+                left: 43%;
+                bottom: 28%;
+            }
+            #topic{
+                position: absolute;
+                left: 40%;
+                bottom: 42%;
+            }
+            #image{
+                position: absolute;
+                left: 30%;
+            }
+
+
+        </style>
+	</head>
+
+	 <body>
+         <img id="image" src="Images/Presentation/cricket.jpg" alt="cricket and rugby image">
+         <div>
+             <h2 id="topic">Topic : Sports  (Sports Corner)</h2>
+             <div id="group">
+                <h2>Group Members</h2>
+                <div>Osanda Viduda         : Student 1</div>
+                <div>Tharindu De Silva     : Student 2</div>
+                <div>Vajith Chamuditha     : Student 3</div>
+                <div>Ruchira Chathuranga   : Student 4</div>
+             </div>
+         </div>
+	 	
+
+		
+		<script>
+            //after 4 second below function redirect to main page
+	    setTimeout(function(){
+	      window.location.href = 'Main.html'; /// <<<<< add the main page link here
+	  	}, 4000);
+		</script>	
+	</body>
+</html>

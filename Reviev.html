@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link href="CSS/MainCss.css" rel="stylesheet" type="text/css">
+    <link href="CSS/Review.css" rel="stylesheet" type="text/css">
+</head>
+<div class="main-review">
+    <div class="logo">
+        <a href="Main.html"><li><b class="brand-logo" href="#"><img src="Images/Brand%20Logo/logo.jpg" alt="Logo"></b> </li></a>           <!--website logo-->
+    </div>
+    <div class="navbar">                                <!--navigation bar-->
+        <div class="dropdown">                          <!--drop down menu for about section-->
+            <button class="dropbtn">About
+            </button>
+            <div class="dropdown-content">              <!--drop down content of the about section-->
+                <a href="Reviev.html">Feedback</a>
+                <a href="site%20map.html">SiteMap</a>
+                <a href="student-details.html">Group Info</a>
+            </div>
+        </div>
+        <a href="Gallery.html">Gallery</a>              <!--navigation bar links-->
+        <a href="buyproducts.html">Products</a>                    <!--navigation bar links-->
+        <div class="dropdown">                          <!--drop down menu for about Explore-->
+            <button class="dropbtn">Explore
+            </button>
+            <div class="dropdown-content">              <!--drop down content of the Explore section-->
+                <a href="Cricket.html">Cricket</a>
+                <a href="Swimming.html">Swimming</a>
+                <a href="Formula-1.html">Formula-1</a>
+                <a href="Rugby.html">Rugby</a>
+            </div>
+        </div>
+        <a href="QUIZ.html">Quiz</a>                    <!--navigation bar links-->
+        <a href="Main.html">Home</a>                    <!--navigation bar links-->
+    </div>
+
+    <div class="review">                                <!--Comment form starts here-->
+        <fieldset class="legend">
+            <legend align="center">
+                <h1 class="style"><b class="text">REVIEW</b></h1>                                                                                     <!--comment form heading-->
+            </legend>
+            <form name="myForm1" action="Main.html" method="post" id="information" onsubmit="check()">
+                <table cellspacing="10" class="table">
+                    <tr>
+                        <td class="text"><b>First Name:</b></td>
+                        <td><input class="text-Fname" type="text" name="Firstname" placeholder="First Name" id="Firstname"></td>                    <!--first name section-->
+                    </tr>
+                    <tr>
+                        <td class="text" ><b>Last Name :</b></td>
+                        <td><input class="text-Fname" type="text" name="Lastname" Placeholder="Last Name" id="Lastname"></td>                       <!--last name section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Age       :</b></td>
+                        <td><input class="text-Fname" type="text" name="Age" Placeholder="Age"></td>                                                <!--age section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Gender    :</b></td>
+                        <td><input type="radio" name="Gender" value="Male"><b class="text">Male</b> <input type="radio" name="Gender" value="Female">   <!--gender section--->
+                            <b class="text">Female</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Email Address :</b></td>
+                        <td><input class="text-Fname" type="text" name="EmailAddress" Placeholder="Email Address"></td>                             <!--email address section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Comments:</b></td>
+                        <td><textarea class="text-Fname" name="textarea" cols="30" rows="10" id="comments"></textarea></td>                         <!--comment area section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Rating: </b></td>                                                                                       <!--rating section-->
+                        <td>
+                            <select id="rate">
+                                <option value="Please Select">- -</option>                                                                          <!--drop down menu for ration option-->
+                                <option value="Excellent">Excellent</option>
+                                <option value="Above Average">Above average</option>
+                                <option value="Average">Average</option>
+                                <option value="Below Average">Below Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td></td>
+                        <td class="button-1"><button class="button-1"  type="submit" value="Submit" onclick="return validateForm()" >Submit</button></td>       <!---submit button-->
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <script>
+            function validateForm() {
+                var f = document.forms["myForm1"]["Firstname"].value;       /*assigning value from the first name to a variable*/
+                var l = document.forms["myForm1"]["Lastname"].value;        /*assigning value from the second name to a variable*/
+                var c = document.forms["myForm1"]["textarea"].value;        /*assigning value from the comment area to a variable*/
+                if (f == "") {                                              /*Checking whether the user has filled the first name*/
+                    alert("First name must be filled out");                 /*if not will show the required message*/
+                    return false;
+                }
+                if (l == "") {                                              /*Checking whether the user has filled the first name*/
+                    alert("Last name must be filled out");                 /*if not will show the required message*/
+                    return false;
+                }
+                if (c == "") {                                             /*Checking whether the user has filled the first name*/
+                    alert("Write a comment about our website");            /*if not will show the required message*/
+                    return false;
+                }
+            }
+
+
+            function check() {                                             /*Function to check whether the required fields are filled*/
+                var Firstname =document.getElementById("Firstname").value;
+                var Lastname =document.getElementById("Lastname").value;
+                var rate =document.getElementById("rate").value;
+                var comments =document.getElementById("comments").value;
+                var details=confirm("Dear "+Firstname+" "+Lastname+","+"Thank you very much for your feedback.You have rated our site as "+rate+" "+"and your comment was "+comments);
+                if (details==true) {
+                    document.getElementById("information").reset();
+                    window.open("file:///C:/desktop/web%20coursework/Web%20CW/student%202");
+                }
+                else {
+                    none;
+                }
+
+            }
+
+
+        </script>
+    </div>
+
+
+
+
+    <div class="page-editors">                             <!--Quick link for Group info page-->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <p class="title">Dev@Sports Corner</p>
+                        <a href="student-details.html"><p><button class="button">Visit Developers</button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer only-->
+        <div class="footer">
+            <div class="inner-footer">                                                                  <!--for inner footer-->
+                <div class="footer-item">                                                               <!--for Each item in the inner footer-->
+                    <h2>Site Links</h2>                                                                 <!--first section heading (first item)-->
+                    <div class="border"></div>                                                          <!--setting underline border for first section-->
+                    <ul>
+                        <a href="Main.html">                                                            <!--Quick links -->
+                            <li><img src="Images/footer/home-run.png" alt="home logo"> Home</li>
+                        </a>
+                        <a href="QUIZ.html">
+                            <li><img src="Images/footer/question.png" alt="quiz logo"> Quiz</li>
+                        </a>
+                        <a href="Main.html">
+                            <li><img src="Images/footer/explore.png" alt="explore logo"> Explore</li>
+                        </a>
+                        <a href="buyproducts.html">
+                            <li><img src="Images/footer/buy.png" alt="product logo"> Products</li>
+                        </a>
+                        <a href="Gallery.html">
+                            <li><img src="Images/footer/image.png" alt="gallery logo"> Pictures</li>
+                        </a>
+                        <a href="site%20map.html">
+                            <li><img src="Images/footer/site.png" alt="sitemap logo"> Site Map</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h2>Contact Us</h2>
+                    <div class="border"></div>
+                    <ul>
+                        <a href="#">
+                            <li><img src="Images/footer/phone.png" alt="phone logo"> +94771234651</li>
+                        </a>
+                        <a href="#">
+                            <li><img src="Images/footer/pin.png" alt="loaction logo"> Location</li>
+                        </a>
+                        <a href="#">
+                            <li><img src="Images/footer/mail.png" alt="mail logo"> e-mail</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-item">                                                                          <!--Second section-->
+                    <h2>Follow Us On</h2>                                                                          <!--Heading for the Second section(2nd item)-->
+                    <div class="border"></div>                                                                     <!--underlined border for second section heading-->
+                    <ul>
+                        <a href="#">
+                            <li><img src="Images/footer/facebook.png" alt="facebook logo"> Facebook</li>           <!--Quick links -->
+                        </a>
+                        <a href="#">
+                            <li><img src="Images/footer/twitter.png" alt="twitter logo"> Twitter</li>
+                        </a>
+                        <a href="#">
+                            <li><img src="Images/footer/instagram.png" alt="instagram logo"> Instagram</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-bottom">                                                                        <!--separate box for page editor section-->
+                    <h4>Page Editors</h4>                                                                          <!--Heading for the page editor-->
+                    <a class="editor" href="tharinduPageEditor.html">Tharindu De Silva</a>                         <!--Name of the page editor-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+

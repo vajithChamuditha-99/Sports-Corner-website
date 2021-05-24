@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tharindu Page Editor</title>
+</head>
+<style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    table#t01 th {
+        background-color: black;
+        color: white;
+    }
+
+    .profile {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+        float: right;
+        margin: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+</style>
+<body>
+    <div>
+
+        <!--Heading Student Name-->
+        <div>
+            <a href="Main.html"><h6>back to Home</h6></a>
+            <h2>Student 2</h2>
+        </div>
+        
+        <!--Student Photo-->
+        <div>
+            <img class="profile" src="Images/Group/Student2.jpg">
+        </div>
+
+        <div>
+            <h3>Tharindu De Silva</h3>
+        </div>
+
+        <div class="Details">
+            <hr>
+            <h4><b>Student Details</b></h4>
+            <table>
+                <tr>
+                    <td>Student IIT ID</td><td>2018367</td>
+                </tr>
+                <tr>
+                    <td>Student UoW ID</td><td>w1761890</td>
+                </tr>
+                <tr>
+                    <td>E-mail</td><td>tharindu.2018367@iit.ac.lk</td>
+                </tr>
+                <tr>
+                    <td>Role</td><td>Student 2</td>
+                </tr>
+            </table>
+
+            <div class="Role">
+                <hr>
+                <h4>Student Role</h4>
+                <table id="t01">
+                    <tr>
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Main Page</td>
+                        <td>Creating the Main page which  user can access several parts of the site<br>Navigation Bar, Footer, website Logo</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Comment Form</td>
+                        <td>Page that User can rate and send feedback about the site.</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>External CSS File</td>
+                        <td>Creating Unique CSS file that will used throughout the web site </td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Additional Page</td>
+                        <td>Created a additional page based on the topic - swimming sport </td>
+                        <td>Done</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

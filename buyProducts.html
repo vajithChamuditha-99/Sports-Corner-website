@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="CSS/MainCss.css" rel="stylesheet" type="text/css">
+    <link href="CSS/checkout.css" rel="stylesheet" type="text/css">
+    <link href="CSS/buyproducts.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="sport">
+        <!--footer start from here(navigation bar)-->
+        <div class="section-1">
+            <div class="main">
+                <div class="logo">
+                    <a href="Main.html"><li><b class="brand-logo" href="#"><img src="Images/Brand%20Logo/logo.jpg" alt="Logo"></b> </li></a>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">About
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="Reviev.html">Feedback</a>
+                            <a href="site%20map.html">SiteMap</a>
+                            <a href="student-details.html">Group Info</a>
+                        </div>
+                    </div>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="buyProducts.html">Products</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Explore
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="Cricket.html">Cricket</a>
+                            <a href="Swimming.html">Swimming</a>
+                            <a href="Formula-1.html">Formula-1</a>
+                            <a href="Rugby.html">Rugby</a>
+                        </div>
+                    </div>
+                    <a href="QUIZ.html">Quiz</a>
+                    <a href="Main.html">Home</a>
+                </div>
+            </div>
+        </div>
+
+            <!--END OF THE NAVIGATION BAR-->
+
+            <!--all the products are displayed with name,price and add to cart button-->
+
+        <div class="section-add-1">
+            
+            <section class="product-contents">
+                <div class="produts">
+                    <div class="produt">
+                        <!--name of the product-->
+                        <span class="product-title">Mclaren 2020 Team T-Shirt</span>
+                        <!--image of the 1st product-->
+                        <img class="product-images" src="Images/Buy%20Products/mc_new_shirt.jpeg"  alt="Mclaren 2020 Team T-Shirt image">
+                        <div class="product-details">
+                            <!--price of the product-->
+                            <span class="product-price">$61.20</span>
+                            <!--add cart product-->
+                            <button class="add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="produt">
+                        <!--name of the product-->
+                        <span class="product-title">Mclaren 2020 Team Cap</span>
+                        <!--image of the 2nd product-->
+                        <img class="product-images" src="Images/Buy%20Products/mc_cap_2020_wbg.jpg" alt="Mclaren 2020 Team Cap image">
+                        <div class="product-details">
+                            <!--price of the product-->
+                            <span class="product-price">$38.25</span>
+                            <!--add cart product-->
+                            <button class="add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="produt">
+                        <!--name of the product-->
+                        <span class="product-title">Mercedes 2020 Team Cap</span>
+                        <!--image of the 3rd product-->
+                        <img class="product-images" src="Images/Buy%20Products/merc_cap_2020_wbg.jpeg" alt="Mercedes 2020 Team Cap image">
+                        <div class="product-details">
+                            <!--price of the product-->
+                            <span class="product-price">$45.05</span>
+                            <!--add cart product-->
+                            <button class="add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="produt">
+                        <!--name of the product-->
+                        <span class="product-title">Mercedes 2020 Team T-Shirt</span>
+                        <!--image of the 4th product-->
+                        <img class="product-images" src="Images/Buy%20Products/merc_2020.jpg" alt="Mercedes 2020 Team T-Shirt image">
+                        <div class="product-details">
+                            <!--price of the product-->
+                            <span class="product-price">$61.20</span>
+                            <!--add cart product-->
+                            <button class="add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--billing details form-->
+        <div class="section-add-2">
+            <section id="form">
+                <form name="details" class="details-form">
+                    <h3>Billing Details</h3>
+                    <label for="fname">First name:</label><br>
+                    <!--first name filed-->
+                    <input type="text" id="fname" name="fname" placeholder="Namal" ><br>
+                    <label for="lname">Last name:</label><br>
+                    <!--last name filed-->
+                    <input type="text" id="lname" name="lname" placeholder="Perera"><br>
+                    <label for="address">Address:</label><br>
+                    <!--address filed-->
+                    <input type="text" id="address" name="address" placeholder="505/S 3rd lane"><br>
+                    <label for="city">City:</label><br>
+                    <!--city name filed-->
+                    <input type="text" id="city" name="city" placeholder="Panadura"><br>
+                    <label for="province" id="provincelbl">Province/State:</label><br>
+                    <!--province or state name filed-->
+                    <input type="text" id="province" name="province" placeholder="Western Province"><br>
+                    <label for="country" id="countrylbl">Country:</label><br>
+                    <!--country name filed-->
+                    <input type="text" id="country" name="country" placeholder="Sri Lanka"><br>
+
+                    <input type="button" id="submit" value="Place order">
+                </form>
+            </section>
+            <!--cart section start here it include name,price and quntity cloumns-->
+            <section class="cart-section">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+            </section>
+        </div>
+
+
+        <script src="CSS/checkout.js"></script>
+        <!--footer start from here-->
+        <div class="section-2">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <p class="title">Dev@Sports Corner</p>
+                            <a href="student-details.html"><p><button class="button">Visit Developers</button></p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-3">
+
+            <div class="footer">
+                <div class="inner-footer">
+                    <div class="footer-item">
+                        <h2>Site Links</h2>
+                        <div class="border"></div>
+                        <ul>
+                            <a href="Main.html">
+                                <li><img src="Images/footer/home-run.png"> Home</li>
+                            </a>
+                            <a href="QUIZ.html">
+                                <li><img src="Images/footer/question.png"> Quiz</li>
+                            </a>
+                            <a href="Main.html">
+                                <li><img src="Images/footer/explore.png"> Explore</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/buy.png"> Products</li>
+                            </a>
+                            <a href="Gallery.html">
+                                <li><img src="Images/footer/image.png"> Pictures</li>
+                            </a>
+                            <a href="site%20map.html">
+                                <li><img src="Images/footer/site.png"> Site Map</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h2>Contact Us</h2>
+                        <div class="border"></div>
+                        <ul>
+                            <a href="#">
+                                <li><img src="Images/footer/phone.png"> +94771234651</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/pin.png"> Location</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/mail.png"> e-mail</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h2>Follow Us On</h2>
+                        <div class="border"></div>
+                        <ul>
+                            <a href="#">
+                                <li><img src="Images/footer/facebook.png"> Facebook</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/twitter.png"> Twitter</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="Images/footer/instagram.png"> Instagram</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <h4>Page Editors</h4>
+                        <a class="editor" href="osandaPageEditor.html">Osanda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

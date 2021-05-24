@@ -1,0 +1,74 @@
+.main-review {
+    background-color: white;
+}
+
+
+.review{
+    background-color: #355681;
+    grid-area: review;
+    padding-right: 300px;
+    background-image: url("Css Images/feedback.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.legend{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #ffde59;
+}
+.text-Fname{
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border-color: #ffde59;
+}
+
+.fieldset{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+}
+.button-1 {
+    border-radius: 4px;
+    background-color: #ffde59;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 6px;;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-1:hover span {
+    padding-right: 25px;
+}
+
+.button-1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.text{
+    -webkit-text-fill-color: ghostwhite;
+    font-family: Helvetica;
+}
